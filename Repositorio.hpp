@@ -51,6 +51,9 @@ struct Repositorio{
         while(inFile){
             if(contador<=3){
                 inFile.read((char*)&linha, sizeof(linha));
+                if(contador == 0){
+                    this->pdbId = linha;
+                }
                 contador++;
             }
             else{

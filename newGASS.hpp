@@ -44,5 +44,6 @@ void run(std::vector<site>& templates, Repositorio& repositorio, std::string out
 void run(std::vector<site>& templates, Repositorio& repositorio, std::string outputName, Parameters parameters);
 void readRunFile(std::string fileName, std::vector<std::string>& proteinNames);
 void runOneToOne(site* temp, Repositorio* repositorio, std::set<Individuo>* results);
+void runOneToOne(site* temp, Repositorio* repositorio, std::set<Individuo>* results, Parameters param);
 void runSanityTest(Parameters param, std::set<Individuo>* results);
 }

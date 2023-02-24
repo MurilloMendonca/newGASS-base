@@ -300,7 +300,7 @@ void GA::run(Repositorio *repo, site* temp, int geracoes, int quadrante, std::se
         
 
 
-        top->insert(elite.begin(),elite.end());
+        top->insert(populacao.begin(),populacao.end());
 
         
         if(top->size()>quantidadeElitismo){
@@ -578,6 +578,7 @@ double GA::calculaFit(Individuo ind){
 			i = tam_sitiof;
 			j = tam_sitiof;
 		}
+    fit<=0.001 ? fit=0 : fit;
     return fit;
 }
 
