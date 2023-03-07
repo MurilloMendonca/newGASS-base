@@ -307,7 +307,7 @@ void GA::run(Repositorio *repo, site* temp, int geracoes, int quadrante, std::se
             top->erase(std::next(top->begin(),quantidadeElitismo),top->end());
         }
     }
-    salvaPopulacao(*top, false);
+    //salvaPopulacao(*top, false);
 
 }
 
